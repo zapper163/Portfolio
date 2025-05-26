@@ -3546,9 +3546,9 @@ li.busc a:hover {
 .modal-content {
 	background: white;
 	margin: 5% auto;
-	padding: 2em;
+	padding: 2.5em;
 	width: 80%;
-	max-width: 600px;
+	max-width: 1000px;
 	border-radius: 1em;
 	position: relative;
 }
@@ -3575,3 +3575,5 @@ li.busc a:hover {
 body.modal-open {
 	overflow: hidden;
 }
+
+
