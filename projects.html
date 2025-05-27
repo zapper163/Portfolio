@@ -14,7 +14,7 @@
 	<style>
 		/* === DEBUG VISUAL === */
 		* {
-			outline: 1px solid rgba(255, 0, 0, 0.4);
+			/*outline: 1px solid rgba(255, 0, 0, 0.4);*/
 		}
 	</style>
 </head>
@@ -62,7 +62,7 @@
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
 					<a href="#modal-1" class="image fit thumb">
-						<img src="images/thumbs/01.jpg"  />
+						<img src="images/thumbs/01.jpg" />
 					</a>
 					<h3>Magna sed consequat tempus</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -70,7 +70,7 @@
 
 				<article class="col-6 col-12-xsmall work-item">
 					<a href="#modal-1" class="image fit thumb">
-						<img src="images/thumbs/01.jpg"  />
+						<img src="images/thumbs/01.jpg" />
 					</a>
 					<h3>Magna sed consequat tempus</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -78,7 +78,7 @@
 
 				<article class="col-6 col-12-xsmall work-item">
 					<a href="#modal-1" class="image fit thumb">
-						<img src="images/thumbs/01.jpg"  />
+						<img src="images/thumbs/01.jpg" />
 					</a>
 					<h3>Magna sed consequat tempus</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -86,7 +86,7 @@
 
 				<article class="col-6 col-12-xsmall work-item">
 					<a href="#modal-1" class="image fit thumb">
-						<img src="images/thumbs/01.jpg"  />
+						<img src="images/thumbs/01.jpg" />
 					</a>
 					<h3>Magna sed consequat tempus</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -124,7 +124,20 @@
 					</ul>
 				</div>
 				<div class="col-6 col-12-xsmall work-item">
-					<img src="images/thumbs/01.jpg" class="image fit thumb"  />
+
+
+
+
+					<div class="image-slider">
+						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+						<img class="slide-image" src="images/thumbs/01.jpg" style="display:block;" />
+						<img class="slide-image" src="images/thumbs/02.jpg" style="display:none;" />
+						<img class="slide-image" src="images/thumbs/03.jpg" style="display:none;" />
+						<button class="next" onclick="changeSlide(1)">&#10095;</button>
+					</div>
+
+
+					<!--<img src="images/thumbs/01.jpg" class="image fit thumb" />-->
 					<h3>Lorem Ipsum</h3>
 					<span class="role">Patata</span>
 				</div>
@@ -138,3 +151,56 @@
 
 
 </html>
+
+
+
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide-image");
+
+  function changeSlide(direction) {
+    slides[currentSlide].style.display = "none";
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].style.display = "block";
+  }
+</script>
+
+
+
+
+
+
+<style>
+  .image-slider {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(83, 80, 80, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+</style>

@@ -17,6 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModal = modal.querySelector('.modal-close');
   */
 
+  window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const modalId = urlParams.get('modal'); // e.g., "modal-2"
+
+    if (modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "block";
+
+      }
+    }
+  };
+
+
   // Al hacer clic en cualquier a[href^="#modal-"]
   document.querySelectorAll('a[href^="#modal-"]').forEach(link => {
     link.addEventListener('click', e => {
