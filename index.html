@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
 	<style>
 		/* === DEBUG VISUAL === */
 		/** {
@@ -69,24 +70,51 @@
 			<h2>Recent Work</h2>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-					<a href="./projects.html?modal=modal-1">
+					<div class="image-slider">
+						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+						<img class="slide-image" src="images/Redactor1.png" style="display:block;" />
+						<img class="slide-image" src="images/Redactor2.png" style="display:none;" />
+						<img class="slide-image" src="images/Redactor3.png" style="display:none;" />
+						<img class="slide-image" src="images/Redactor4.png" style="display:none;" />
+						<img class="slide-image" src="images/Redactor5.png" style="display:none;" />
+						<button class="next" onclick="changeSlide(1)">&#10095;</button>
+					</div>
+					<a href="./projects.html?modal=modal-Redactor">
 						<h3>Redactor Exprés</h3>
 					</a>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+
+					<div class="image-slider">
+						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+						<img class="slide-image" src="images/thumbs/01.jpg" style="display:block;" />
+						<img class="slide-image" src="images/thumbs/02.jpg" style="display:none;" />
+						<img class="slide-image" src="images/thumbs/03.jpg" style="display:none;" />
+						<button class="next" onclick="changeSlide(1)">&#10095;</button>
+					</div>
 					<h3>TLOF Abandoned Powerstation</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+					<div class="image-slider">
+						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+						<img class="slide-image" src="images/thumbs/01.jpg" style="display:block;" />
+						<img class="slide-image" src="images/thumbs/02.jpg" style="display:none;" />
+						<img class="slide-image" src="images/thumbs/03.jpg" style="display:none;" />
+						<button class="next" onclick="changeSlide(1)">&#10095;</button>
+					</div>
 					<h3>Frost Engine</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+					<div class="image-slider">
+						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+						<img class="slide-image" src="images/thumbs/01.jpg" style="display:block;" />
+						<img class="slide-image" src="images/thumbs/02.jpg" style="display:none;" />
+						<img class="slide-image" src="images/thumbs/03.jpg" style="display:none;" />
+						<button class="next" onclick="changeSlide(1)">&#10095;</button>
+					</div>
 					<h3>Echoes from the Past</h3>
 					<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 				</article>
@@ -528,6 +556,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/custom.modal.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>

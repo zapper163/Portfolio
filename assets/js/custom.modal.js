@@ -65,3 +65,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+//Imagenes
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.image-slider').forEach(slider => {
+      let currentIndex = 0;
+      const images = slider.querySelectorAll('.slide-image');
+      const prevBtn = slider.querySelector('.prev');
+      const nextBtn = slider.querySelector('.next');
+
+      function showImage(index) {
+        images.forEach((img, i) => {
+          img.style.display = i === index ? 'block' : 'none';
+        });
+      }
+
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      });
+
+      showImage(currentIndex); // Mostrar imagen inicial
+    });
+  });

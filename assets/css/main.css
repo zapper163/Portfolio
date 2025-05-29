@@ -353,7 +353,7 @@ pre code {
 	text-align: right;
 }
 
-.justify{
+.justify {
 	text-align: justify;
 }
 
@@ -2841,7 +2841,7 @@ input[type="button"]:disabled,
 	width: calc(100% - 35%);
 }
 
-#main > section {
+#main>section {
 	border-top: solid 2px #efefef;
 	margin: 4em 0 0 0;
 	padding: 4em 0 0 0;
@@ -3577,3 +3577,39 @@ body.modal-open {
 }
 
 
+
+
+
+
+.image-slider {
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+}
+
+.image-slider img {
+	width: 100%;
+	height: auto;
+}
+
+.prev,
+.next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(83, 80, 80, 0.5);
+	color: white;
+	border: none;
+	font-size: 2rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
