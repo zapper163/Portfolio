@@ -11,12 +11,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
 	<style>
 		/* === DEBUG VISUAL === */
 		* {
-			outline: 1px solid rgba(255, 0, 0, 0.4);
+			/*outline: 1px solid rgba(255, 0, 0, 0.4);*/
 		}
 	</style>
+
 </head>
 
 
@@ -136,73 +138,73 @@
 		<div class="modal-content">
 			<!--<a href="#" class="close">&times;</a>--> <!--ANTIGUO BOTON-->
 			<span class="modal-close">&times;</span>
-			<div class="row">
-				<div class="col-6 col-12-xsmall work-item">
-					<header>
-						<h2><b>REDACTOR EXPRÉS</b> - A newspaper management simulator</h2>
-						<h3 class="justify" style="margin-bottom: 20px;">
-							Redactor Exprés is a game where you play as the editor-in-chief of a news outlet.
-							Each day, you choose which stories to publish based on public interest. Once published, your
-							earnings depend
-							on how well you match those interests and can be used to acquire more
-							compelling news, upgrade the newsroom, hire additional journalists, or secure better
-							contracts.
-						</h3>
-						<h3 class="justify" style="margin-bottom: 20px;">This prototype was developed as a response to
-							the Game Jam premise to create
-							a casual game experience that encourages individuals—especially those who
-							don’t typically engage with daily news—to feel more connected and curious about current
-							events.
-						</h3>
+			<div class="col-6 col-12-xsmall work-item">
+				<header>
+					<h2><b>REDACTOR EXPRÉS</b> - A newspaper management simulator</h2>
+					<h3 class="justify" style="margin-bottom: 20px;">
+						Redactor Exprés is a game where you play as the editor-in-chief of a news outlet.
+						Each day, you choose which stories to publish based on public interest. Once published, your
+						earnings depend
+						on how well you match those interests and can be used to acquire more
+						compelling news, upgrade the newsroom, hire additional journalists, or secure better
+						contracts.
+					</h3>
+					<h3 class="justify" style="margin-bottom: 20px;">This prototype was developed as a response to
+						the Game Jam premise to create
+						a casual game experience that encourages individuals—especially those who
+						don’t typically engage with daily news—to feel more connected and curious about current
+						events.
+					</h3>
+					<h3 class="justify" style="margin-bottom: 20px;">
+						This game was developed in just one week for the <strong>Ludi Awards,</strong> organized by
+						3Cat and GameBCN.
 
-
-						<h3 class="justify" style="margin-bottom: 20px;">
-							This game was developed in just one week for the <strong>Ludi Awards,</strong> organized by
-							3Cat and GameBCN.
-
-						</h3>
-
-					</header>
-					<hr /> <!-- ESPACIO EN BLANCO-->
-					<div class="row" style="padding-top: 0;">
-						<div class="col-6 col-12-xsmall work-item">
+					</h3>
+					<div class="row work-item box">
+						<div class="col-6 col-12-xsmall">
 							<h3>Tasks</h3>
 							<ul>
 								<li>Game Design</li>
 								<li>Audio & QA</li>
 							</ul>
-
-
-
 						</div>
-						<div class="col-6 col-12-xsmall work-item">
+
+						<div class="col-6 col-12-xsmall">
 							<h3>Awards</h3>
 							<ul>
 								<li>Best Replayability</li>
 							</ul>
 						</div>
+
 					</div>
 
+				</header>
+
+
+			</div>
+
+			<div class="work-item">
+				<h3 style="text-align: center;">Images</h3>
+				<div class="image-slider" style="margin-bottom: 10px;">
+					<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+					<img class="slide-image image fit" src="images/Redactor1.webp" style="display:block;" />
+					<img class="slide-image image fit" src="images/Redactor2.webp" style="display:none;" />
+					<img class="slide-image image fit" src="images/Redactor3.webp" style="display:none;" />
+					<img class="slide-image image fit" src="images/Redactor4.webp" style="display:none;" />
+					<img class="slide-image image fit" src="images/Redactor5.webp" style="display:none;" />
+					<button class="next" onclick="changeSlide(1)">&#10095;</button>
 				</div>
-				<div class="col-6 col-12-xsmall work-item">
+			</div>
 
-
-					<div class="image fit" style="margin-bottom: 10px;">
-						<img  src="images/Redactor1.webp" style="display:block;" />
-
-					</div>
-					<!--
-					<div class="col span_1_of_2 box">
-						<div class="videoResponsive">
-							<iframe width="400" height="250" src="https://www.youtube.com/embed/8grucUyaKlY"></iframe>
-						</div>
-					</div>
-					-->
-
+			<div class="row work-item">
+				<div class="col-6 col-12-xsmall">
 					<h3>Credits</h3>
 					<h3 style="margin-bottom: 20px;">
 						Juan de Dios García, David Boces, Alejandro Giralt
 					</h3>
+				</div>
+
+				<div class="col-6 col-12-xsmall">
 					<h3>Learn More</h3>
 					<ul class="icons">
 						<li><a href="https://www.youtube.com/watch?v=8grucUyaKlY" class="icon brands fa-youtube"><span
@@ -213,24 +215,28 @@
 									class="label">Premis Ludi</span></a></li>
 
 					</ul>
-					<!--<img src="images/thumbs/01.jpg" class="image fit thumb" />-->
-
-
-
-				</div>
-				<div class="work-item">
-					<h3 style="text-align: center; margin-right: 50px">Images</h3>
-					<div class="image-slider" style="margin-bottom: 10px;">
-						<button class="prev" onclick="changeSlide(-1)">&#10094;</button>						
-						<img class="slide-image" src="images/Redactor2.webp" style="display:block;" />
-						<img class="slide-image" src="images/Redactor3.webp" style="display:none;" />
-						<img class="slide-image" src="images/Redactor4.webp" style="display:none;" />
-						<img class="slide-image" src="images/Redactor5.webp" style="display:none;" />
-						<button class="next" onclick="changeSlide(1)">&#10095;</button>
-					</div>
 				</div>
 
 			</div>
+			<div class="col-6 col-12-xsmall work-item">
+
+				<!--
+					<div class="col span_1_of_2 box">
+						<div class="videoResponsive">
+							<iframe width="400" height="250" src="https://www.youtube.com/embed/8grucUyaKlY"></iframe>
+						</div>
+					</div>
+					-->
+
+
+
+				<!--<img src="images/thumbs/01.jpg" class="image fit thumb" />-->
+
+
+
+			</div>
+
+
 		</div>
 	</div>
 

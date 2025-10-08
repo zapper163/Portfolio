@@ -2296,7 +2296,7 @@ ol li {
 
 ul {
 	list-style: disc;
-	margin: 0 0 2em 0;
+	margin: 0 0 0 0;
 	padding-left: 1em;
 }
 
@@ -2311,7 +2311,7 @@ ul.alt {
 
 ul.alt li {
 	border-top: solid 2px #efefef;
-	padding: 0.5em 0;
+	padding: 0em 0;
 }
 
 ul.alt li:first-child {
@@ -3585,7 +3585,7 @@ body.modal-open {
 
 .image-slider {
 	position: relative;
-	max-width: 95%;
+	max-width: 100%;
 	text-align: center;
 }
 
