@@ -2181,7 +2181,7 @@ input[type="radio"]+label:before {
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
-	background: url("images/overlay.png");
+	/*background: url("images/overlay.png");*/
 	border-radius: 0.35em;
 	content: '';
 	display: block;
@@ -2249,7 +2249,7 @@ input[type="radio"]+label:before {
 
 .image.left,
 .image.right {
-	max-width: 20%;
+	max-width: 35%;
 }
 
 .image.left img,
