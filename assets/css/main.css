@@ -2280,7 +2280,25 @@ input[type="radio"]+label:before {
 	width: 100%;
 }
 
+.image.logo {
+	width: 60px; /* controla el tamaño real */
+}
 
+.image.logo img {
+	width: 100%;
+	height: auto;
+
+}
+
+.image.logou { /*especifico del logo de Unity*/
+	width: 120px; 
+}
+
+.image.logou img { /*especifico del logo de Unity*/
+	width: 100%;
+	height: auto;
+
+}
 
 /* List */
 
@@ -3618,6 +3636,12 @@ body.modal-open {
 
 
 
+.logos {
+	display: flex;
+	justify-content: space-around; /* o center / space-between */
+	align-items: center;
+	margin-top: 1em;
+}
 
 
 
